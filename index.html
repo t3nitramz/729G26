@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Assignment 4 - Slideshow</title>
     <meta charset="utf-8">
-    <title>UVR</title>
-    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
-    <link type="text/css" rel="stylesheet" href="lightslider/css/lightslider.min.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link type="text/css" rel="stylesheet" href="lightslider.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-    <script src="lightslider/js/lightslider.min.js"></script>
-    <tscript src="script.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="lightslider.min.js"></script>
+    <script src="script.js"></script>
+
 
   </head>
   <body>
-    <div id="wrapper">
-      <div id="nav_header">
-        <div id="logo">UVR</div>
-
-        <div class="nav_box" id="left_1">
-
-        </div>
-      <div/>
-
-
-      </div>
-
-
-      <div id="slideshow_box">
-        <div id="slideshow">
-          <ul id="lightSlider">
-            <li class="slide"><img src="träd_katt.jpg"/></li>
-            <li class="slide"><img src="derp_katt.jpg"/></li>
-            <li class="slide"><img src="gran_katt.jpg"/></li>
-            <li class="slide"><img src="smart_katt.jpg"/></li>
-          </ul>
-        </div>
+    <div id="navigation">
+      <ul id="menu" style="list-style-type:none">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="slideshow.html">Slideshow</a></li>
+      <li><div>Jquery UI</div>
+        <ul>
+          <li><a href="accordion.html">Accordion</a></li>
+          <li><a href="tabs.html">Tabs</a></li>
+        </ul>
+      </li>
+      </ul>
+      <div id="slides how">
+        <ul id="lightSlider">
+          <li class="slide"><img src="träd_katt.jpg"/></li>
+          <li class="slide"><img src="gran_katt.jpg"/></li>
+          <li class="slide"><img src="derp_katt.jpg"/></li>
+          <li class="slide"><img src="smart_katt.jpg"/></li>
+        </ul>
       </div>
 
 
 
     </div>
-
-
+    </div>
   </body>
 </html>
