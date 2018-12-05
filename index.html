@@ -3,29 +3,23 @@
   <head>
     <title>Assignment 4 - Slideshow</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="jquery-ui.min.css">
     <link type="text/css" rel="stylesheet" href="lightslider.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="jquery-ui.js"></script>
     <script src="lightslider.min.js"></script>
     <script src="script.js"></script>
 
 
   </head>
   <body>
-    <div id="navigation">
-      <ul id="menu" style="list-style-type:none">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="slideshow.html">Slideshow</a></li>
-      <li><div>Jquery UI</div>
-        <ul>
-          <li><a href="accordion.html">Accordion</a></li>
-          <li><a href="tabs.html">Tabs</a></li>
-        </ul>
-      </li>
-      </ul>
-      <div id="slides how">
+    <div class="viewport" id="viewport1">
+      <div id="nav_header">
+        <div class="first_right drop_down">Oculus</div>
+        <div id="logo">UVR</div>
+        <a href="" class="first_left drop_down">Samsung</a>
+      </div>
+
+      <div id="slideshow">
         <ul id="lightSlider">
           <li class="slide"><img src="träd_katt.jpg"/></li>
           <li class="slide"><img src="gran_katt.jpg"/></li>
@@ -35,6 +29,14 @@
       </div>
 
 
+
+    </div>
+    <div class="viewport" id="viewport2"style="display: block">
+      <img src="smart_katt.jpg" alt="" />
+
+    </div>
+    <div class="viewport" id="viewport2"style="display: block">
+      <img src="smart_katt.jpg" alt="" />
 
     </div>
     </div>
