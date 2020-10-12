@@ -1,45 +1,140 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>UVR</title>
-    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
-    <link type="text/css" rel="stylesheet" href="lightslider/css/lightslider.min.css">
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="lightslider.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-    <script src="lightslider/js/lightslider.min.js"></script>
-    <tscript src="script.js"></script>
+    <script src="lightslider.min.js"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
 
   </head>
   <body>
     <div id="wrapper">
-      <div id="nav_header">
-        <div id="logo">UVR</div>
-
-        <div class="nav_box" id="left_1">
-
-        </div>
-      <div/>
-
-
+      <img class="page_indicator number1" id='indicator1' src="Images/checked.png" alt="" />
+      <img class="page_indicator number2" id='indicator2' src="Images/unchecked.png" alt="" />
+      <img class="page_indicator number3" id='indicator3' src="Images/unchecked.png" alt="" />
+      <div id="cart" class="show">
+        <h2>Cart</h2>
+        <div id="hide_button">Hide</div>
+        <div id="product_list"></div>
+        <button id="check_out" type="button">Check out</button>
+      </div>
+      <a id="underNavCircle"></a>
+      <div id="topNav">
+        <a id="home_button" class="first_left number1 drop_down">Home</a>
+        <a id="z_button" class="second_left number2 drop_down">UVR X</a>
+        <a id="logo"></a>
+        <a id="x_button" class="first_right number3 drop_down">UVR Z</a>
+        <a id="about_button" class="second_right drop_down">About UVR</a>
+        <a id="cart_button" class="show third_right drop_down"><img src="Images/shopping-cart.png"/></a>
       </div>
 
+      <a id="navCircle" class="number1"><img src="Images/redpurpLOGO.png"/></a>
+      <div class="viewport" id="viewport1">
 
-      <div id="slideshow_box">
         <div id="slideshow">
           <ul id="lightSlider">
-            <li class="slide"><img src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/07/new-fove-industrial-design-feature-photo.jpg"/></li>
-            <li class="slide"><img src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/07/fove-new-design-2016.jpg"/></li>
-            <li class="slide"><img src="https://ksr-ugc.imgix.net/assets/012/092/993/86ebbdda9a69243d277ce20f3175039e_original.png?ixlib=rb-1.1.0&crop=faces&w=1552&h=873&fit=crop&v=1463731223&auto=format&frame=1&q=92&s=33f7c83e991c6a0f7c138dc234e3b1a7"/></li>
+            <li class="number2 small slide"><img src="Images/UVR_slideshow1.png"/></li>
+            <li class="number2 small slide"><img src="Images/UVR_slideshow2.png"/></li>
+            <li class="number3 small slide"><img src="Images/UVR_slideshow3.png"/></li>
+            <li class="number3 small slide"><img src="Images/UVR_slideshow4.png"/></li>
           </ul>
         </div>
       </div>
 
+      <div class="viewport" id="viewport2"style="display: block">
+        <div class="first left picture">
+          <img src="Images/UVR_1white.png" class="first_product big_image zoomable"alt="" />
+          <div class="container">
+            <h1>UVR Xw</h1>
+            <p>Description</p>
+            <button id='Samsung1' class="add show w3-button w3-round-large" type="button" name="addToCart"><i>Add to cart</i></button>
+            <img class="first_product thumbnail" src="Images/UVR_1white.png" alt="" />
+            <img class="first_product thumbnail" src="Images/UVR_1.2white.png" alt="" />
+            <img class="first_product thumbnail" src="Images/UVR_1.3white.png" alt="" />
+          </div>
+          <div class="first_product big_image hover_container">UVR Xw - 599$</div>
+          <img class="x" src="Images/X.png" alt="" />
 
+        </div>
+        <div class="first right picture">
+          <img src="Images/UVR_1black.png" class="second_product big_image zoomable" alt="" />
+          <div class="container">
+            <h1>UVR Xb</h1>
+            <p>Description</p>
+            <button id='Samsung2' class="add show w3-button w3-round-large" type="button"><i>Add to cart</i></button>
+            <img class="second_product thumbnail" src="Images/UVR_1black.png" alt="" />
+            <img class="second_product thumbnail" src="Images/UVR_1.2black.png" alt="" />
+            <img class="second_product thumbnail" src="Images/UVR_1.3black.png" alt="" />
+          </div>
+          <div class="second_product big_image hover_container">UVR Xb - 699$</div>
+          <img class="x" src="Images/X.png" alt="" />
+        </div>
 
+      </div>
+      <div class="viewport" id="viewport3"style="display: block">
+        <div class="second left picture">
+          <img src="Images/UVR_2white.png" class="third_product big_image zoomable"alt="" />
+          <div class="container">
+            <h1>UVR Zw</h1>
+            <p>Description</p>
+            <button id='Vive1' class="add show w3-button w3-round-large" type="button" name="add_one">Add to cart</button>
+            <img class="third_product thumbnail" src="Images/UVR_2white.png" alt="" />
+            <img class="third_product thumbnail" src="Images/UVR_2.1white.png" alt="" />
+            <img class="third_product thumbnail" src="Images/UVR_2.2white.png" alt="" />
+          </div>
+          <div class="third_product big_image hover_container">UVR Zw - 599$</div>
+          <img class="x" src="Images/X.png" alt="" />
+        </div>
+        <div class="second right picture">
+          <img src="Images/UVR_2black.png" class="fourth_product big_image zoomable" alt="" />
+          <div class="container">
+            <h1>UVR Zb</h1>
+            <p>Description</p>
+            <button id='Vive2' class="add show w3-button w3-round-large" type="button" name="add_one">Add to cart</button>
+            <img class="fourth_product thumbnail" src="Images/UVR_2black.png" alt="" />
+            <img class="fourth_product thumbnail" src="Images/UVR_2.1black.png" alt="" />
+            <img class="fourth_product thumbnail" src="Images/UVR_2.2black.png" alt="" />
+          </div>
+          <div class="fourth_product big_image hover_container">UVR Zb - 699$</div>
+          <img class="x" src="Images/X.png" alt="" />
+        </div>
+
+      </div>
+      <div class="footRow">
+        <div class="footColumn"><h3>FAQ</h3>
+        <ul class="footList">
+          <li class="footListItem"><p3>Why are you so expensive?</p3></li>
+          <li class="footListItem"><p3>How come I never receive my product?</p3></li>
+          <li class="footListItem"><p3>Does UVR make people blind?</p3></li>
+          <li class="footListItem"><p3>Seriously, how dangerous are your VR sets?</p3></li>
+          <li class="footListItem"><p3>Can it run Crysis?</p3></li>
+        </ul>
+        </div>
+        <div class="footColumn"><h3>About UVR</h3>
+          <ul class="footList">
+            <li class="footListItem"><p3>Our philosophy</p3></li>
+            <li class="footListItem"><p3>Research & Development</p3></li>
+            <li class="footListItem"><p3>Career</p3></li>
+            <br>
+            <br>
+          </ul>
+          </div>
+          <div class="footColumn"><h3>The Community</h3>
+            <ul class="footList">
+              <li class="footListItem"><p3>Forum</p3></li>
+              <li class="footListItem"><p3>Support</p3></li>
+              <li class="footListItem"><p3>Blog</p3></li>
+              <li class="footListItem"><p3>Reddit</p3></li>
+              <li class="footListItem"><p3>4chan.org/b</p3></li>
+            </ul>
+            </div>
+        </div>
     </div>
-
-
   </body>
 </html>

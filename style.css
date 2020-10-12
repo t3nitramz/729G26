@@ -1,32 +1,366 @@
-#wrapper {
+.viewport {
   height: 100vh;
-  width: 100vw;
-
+  position: relative;
+  margin-top: 0;
 }
 
-#nav_header {
-  height: 60px;
-  width: 100vw;
-  top: 0;
+#navigator {
+  left: 0;
+  width: 5vw;
+  height: 100vh;
   position: fixed;
-  margin-bottom: 10px;
-  background-color: black;
-
-
+  z-index: 300;
 }
-#logo {
-  position: absolute;
-  height: inherit;
-  width: 10vw;
-  right: 45vw;
+
+.small {
+  height: 95vh;
+  cursor: pointer !important;
+}
+
+#wrapper {
+  margin: 0
+}
+
+#cart {
+  position: fixed;
+  width: 5px;
+  height: 88vh;
   background-color: white;
+  right: 0;
+  z-index: 250;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-style: ridge;
+  border-width: 1.3px;
+  border-color: #E81A1A;
+  border-right: none;
+  cursor: pointer;
+}
+
+a#cart_button {
+  display: block;
+  margin-top: -1vh;
+  margin-left: 3vw;
+}
+
+a#cart_button img {
+  margin-left: 20px;
+}
+
+.page_indicator {
+  position: fixed;
+  left: 0;
+  z-index: 250;
+  cursor: pointer;
+}
+#indicator1 {
+  top: 40vh;
+  margin-left: 1vw;
+}
+
+#indicator2 {
+  top: 50vh;
+  margin-left: 1vw;
 
 }
-#slideshow_box {
-  margin-top: 70px;
-}
-.nav_box {
-  width: 10px;
-  height: 60px;
 
+#indicator3 {
+  top: 60vh;
+  margin-left: 1vw;
+}
+
+#cart h2 {
+  margin-left: 2vw;
+}
+
+#product_list {
+  height: 70vh;
+}
+
+.cart_item {
+  left: 20px;
+  height: 5vh;
+  background-color: white;
+  display: inline;
+  margin-left: 2vw;
+}
+
+#topNav {
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  background-color:white;;
+  z-index: 100;
+  top: 0;
+  border-bottom-style: ridge;
+  border-bottom-width: 1.2px;
+  border-bottom-color: #E81A1A;
+}
+
+#topNav a:hover {
+  background-color: rgb(232, 26, 26, 0.5);
+}
+
+#underNavCircle {
+  position: absolute;
+  margin-top: -174px;
+  height: 200px;
+  width: 200px;
+  margin-left: 45vw;
+  opacity: 1;
+  background-color: white;
+  border-radius: 15%;
+  border-style: ridge;
+  border-width: 1.3px;
+  border-color: #E81A1A;
+  z-index: -1;
+}
+
+#navCircle {
+  position: absolute;
+  margin-top: -174px;
+  height: 200px;
+  width: 198.5px;
+  margin-left: 45.13vw;
+  opacity: 1;
+  background-color: white;
+  border-radius: 15%;
+  z-index: 501;
+}
+
+#navCircle img {
+  margin-top: 11vh;
+  margin-left: 40px;
+}
+
+#logo {
+  margin-left: 45vw;
+  margin-right: 45vw;
+  cursor: pointer;
+}
+
+#slideshow {
+  margin-top: 8vh;
+}
+
+#lightSlider img {
+  margin-top: 10vh; /* DENNA KODBIT KAN GÖRA ATT SAKER TRYCKS NEDÅT*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.zoomable:hover {
+  transform: scale(1.1);
+}
+
+.drop_down {
+  margin-top: 1.5vh;
+  width: 10vw;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Comfortaa', bold;
+  font-size: 22.5px;
+  border-radius: 5px;
+}
+
+.second_left {
+  left: 30vw;
+}
+
+.first_left {
+  left: 15vw;
+}
+
+.first_right {
+  right: 30vw;
+}
+
+.second_right {
+  right: 15vw;
+}
+
+.third_right {
+  right: 0vw;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  background-color: white;
+}
+
+.picture {
+  position: absolute;
+  width: 50vw;
+  height: 95vh;
+  overflow: hidden;
+  margin-top: 5vh;
+  border-left: 0 white solid;
+}
+
+.big_image {
+  width: 50vw;
+  cursor: pointer;
+  transition: transform .2s:
+}
+
+.container {
+  display: inline !important;
+  position: absolute;
+  background-color: white;
+}
+
+.hover_container {
+  width: 43vw;
+  background-color: rgb(232, 26, 26, 0.7);
+  position: relative;
+  bottom: 10vh;
+  display: inline-block;
+  opacity: 0.5;
+  height: 6vh;
+  border-radius: 15px 15px 15px 15px;
+  text-align: start;
+  padding-top: 4vh;
+  padding-left: 1vw;
+  margin-left: 1vw;
+  font-size: 20px;
+}
+
+.x {
+  position: absolute;
+  z-index: 150;
+  top: 0;
+  left: 77.5vw;
+  height: 30px !important;
+  width: 30px !important;
+  cursor: pointer;
+}
+
+#footer {
+  position: static;
+  height: 4vh;
+  width: inherit;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(104, 104, 104);
+  color: black;
+  text-align: center;
+  z-index: 100;
+  margin-bottom: 0;
+}
+
+#hide_button {
+  position: absolute;
+  right: 1vw;
+  top: 2vh;
+  z-index: 500;
+  font-size: 20 px;
+  cursor: pointer;
+}
+
+#cart_header {
+  display: inline;
+}
+
+#check_out {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vh;
+}
+
+.thumbnail {
+  width: 7.5vw !important;
+  display: block;
+  cursor: pointer;
+}
+
+.add {
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+.remove {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Comfortaa';
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Comfortaa';
+  font-size: 26px;
+}
+
+p {
+  font-family: 'Comfortaa';
+  font-size: 14px;
+}
+
+p3 {
+  font-family: 'Comfortaa';
+  font-size: 10px;
+}
+
+h3 {
+  font-family: 'Comfortaa';
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 9vw;
+  padding-inline-start: 0px;
+}
+
+.footRow {
+  position: static;
+  display: inline-block;
+  height: auto;
+  width: 100vw;
+  left: 0;
+  margin-bottom: 0px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-top-style: ridge;
+  border-top-width: 1.2px;
+  border-top-color: #E81A1A;
+
+}
+
+.footColumn {
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  text-align: center;
+  z-index: 100;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  height: auto;
+}
+
+.footRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: helvetica;
 }
